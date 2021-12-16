@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <script src="login.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="loginStyle.css" rel="stylesheet" type="text/css" />
+
+  <head>
+    <title>
+      UAT Space Login
+    </title>
+  </head>
+
+  <body>
+    <h1 id="loginTitleStyle">Welcome to UAT Space Login</h1>
+    <h3 class="blinking">Please Fill Out the Form Below</h3>
+    <br />
+    <p id="loginStatus">Status of Login</p>
+    <br />
+    <form id="creditSubmit" onsubmit="return false">
+      First Name:
+      <input type="text" id="fName" />
+      <br />
+      Last Name:
+      <input type="text" id="lName" />
+      <br />
+      Badge Number:
+      <input type="number" id="badgeID" />
+      <br />
+      <br />
+      <input
+        id="submitButton"
+        class="button"
+        type="submit"
+        onclick="checkCreds();"
+      />
+    </form>
+  </body>
+</html>

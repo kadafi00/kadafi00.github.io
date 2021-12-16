@@ -1,0 +1,72 @@
+#h1 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #075988;
+  text-align: center;
+}
+
+#countDownTimer {
+  font-size: 25px;
+}
+
+body {
+  background: linear-gradient(0.25turn, #7bf2e9, #e1f5f8, #b65eba);
+  color: #ba5eab;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(212, 227, 255);
+  border-radius: 10px;
+  border-color: rgb(192, 232, 255);
+  background: linear-gradient(0.25turn, #7bf2e9, #e1f5f8, #b65eba);
+}
+
+.craps {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(212, 227, 255);
+  border-radius: 10px;
+  border-color: rgb(192, 232, 255);
+  background: linear-gradient(0.25turn, #7bf2e9, #e1f5f8, #b65eba);
+}
+
+.img#logo {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 120px;
+  border-color: white;
+}
+
+audio::-webkit-media-controls-panel {
+  background: linear-gradient(0.25turn, #7bf2e9, #e1f5f8, #b65eba);
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #b65eba;
+  border-radius: 50%;
+}
+
+#objTitle {
+  font-size: larger;
+}
+
+footer {
+  position: fixed;
+  top: 90%;
+  left: 10px;
+  font-size: small;
+}
+
+nav {
+  position: relative;
+  top: 50%;
+  left: 44%;
+  font-size: large;
+}
+
+.email {
+  position: absolute;
+  left: 0.4%;
+  top: 95%;
+}

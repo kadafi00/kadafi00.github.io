@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <!-- Travis Moore -->
+
+  <head>
+    <script src="code.js"></script>
+    <script src="class.js"></script>
+    <script src="dataLoader.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+      //creating global variables for webpage
+      var theTime = new Date()
+      var tempTime = new Date()
+      var time_interval = 5000
+      var last_iteration = 0
+      var running = true
+      var index = 0
+      var timer
+
+      //gets data into the array
+      var data = getData()
+    </script>
+
+    <title>
+      Travis Moore's CSC102 page
+    </title>
+  </head>
+
+  <body>
+    <table>
+      <td>
+        <img
+          id="logo"
+          class="img"
+          src="UATspaceLogo.jpg"
+          alt="UAT school logo"
+        />
+      </td>
+      <td>
+        <h1 id="h1" class="heading">UAT Space Program</h1>
+      </td>
+    </table>
+    <table id="data" width="70%" border="2">
+      <thead>
+        <th>Data Type</th>
+        <th>Reading</th>
+      </thead>
+      <tbody>
+        <tr id="seconds"></tr>
+        <tr id="latitude"></tr>
+        <tr id="longitude"></tr>
+        <tr id="gps_altitude"></tr>
+
+        <tr id="bmpSensor_alltitude"></tr>
+        <tr id="bmpSensor_pressure"></tr>
+        <tr id="bmpSensor_temp"></tr>
+        <tr id="digSensor_temp"></tr>
+        <tr id="cssSensor_temp"></tr>
+        <tr id="cssSensor_eCO2"></tr>
+        <tr id="cssSensor_TVOC"></tr>
+        <tr id="UV"></tr>
+        <tr id="accelX"></tr>
+        <tr id="accelY"></tr>
+        <tr id="accelZ"></tr>
+        <tr id="magneticX"></tr>
+        <tr id="magneticY"></tr>
+        <tr id="magneticZ"></tr>
+        <tr id="gyroX"></tr>
+        <tr id="gyroY"></tr>
+        <tr id="gyroZ"></tr>
+      </tbody>
+    </table>
+    <p id="clock">Displays time when running</p>
+    <br />
+    <br />
+    <button id="startButton" class="button" onclick="start();">Start</button>
+    <button id="stopButton" class="button" onclick="stop();">Stop</button>
+    <br />
+    <br />
+    <p id="countDownTimer">waiting to start...</p>
+    <button id="playButton" class="craps" onclick="playCraps();">
+      Play Craps!
+    </button>
+    <p id="die1Res">Die 1...</p>
+    <p id="die2Res">Die 2...</p>
+    <p id="sum1Res">Sum...</p>
+    <p id="FinalRes">Win, lose or draw...</p>
+    <br />
+    <br />
+    <audio id="myAudio" src="deadmau5 - SATRN.mp3" controls autoplay></audio>
+    <br />
+    <br />
+    <nav>
+      <button class="button" onclick="goIndex();">Go to Landing Page</button>
+      <button class="button" onclick="goBoards();">Go to Boards Page</button>
+    </nav>
+  </body>
+</html>

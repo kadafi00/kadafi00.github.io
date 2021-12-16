@@ -1,0 +1,33 @@
+h1 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #000000;
+  text-align: center;
+}
+
+#countDownTimer {
+  font-size: 25px;
+}
+
+body {
+  background: linear-gradient(0.25turn, #7bf2e9, #e1f5f8, #b65eba);
+  color: #ba5eab;
+}
+
+.blinking {
+  animation: opacity 3s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
